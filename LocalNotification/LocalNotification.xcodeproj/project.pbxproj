@@ -13,6 +13,10 @@
 		44E4027F265B3093002E16A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E4027E265B3093002E16A5 /* Preview Assets.xcassets */; };
 		44E4028A265B3093002E16A5 /* LocalNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E40289265B3093002E16A5 /* LocalNotificationTests.swift */; };
 		44E40295265B3093002E16A5 /* LocalNotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E40294265B3093002E16A5 /* LocalNotificationUITests.swift */; };
+		44E402A5265B37AF002E16A5 /* Calendar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E402A4265B37AF002E16A5 /* Calendar+extension.swift */; };
+		44E402A7265B37D3002E16A5 /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E402A6265B37D3002E16A5 /* Date+extension.swift */; };
+		44E402A9265B3804002E16A5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E402A8265B3804002E16A5 /* NotificationController.swift */; };
+		44E402AB265B3840002E16A5 /* PushSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E402AA265B3840002E16A5 /* PushSettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		44E40290265B3093002E16A5 /* LocalNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E40294265B3093002E16A5 /* LocalNotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationUITests.swift; sourceTree = "<group>"; };
 		44E40296265B3093002E16A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E402A4265B37AF002E16A5 /* Calendar+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+extension.swift"; sourceTree = "<group>"; };
+		44E402A6265B37D3002E16A5 /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
+		44E402A8265B3804002E16A5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		44E402AA265B3840002E16A5 /* PushSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,11 @@
 		44E40276265B3091002E16A5 /* LocalNotification */ = {
 			isa = PBXGroup;
 			children = (
+				44E402A3265B3774002E16A5 /* Extension */,
 				44E40277265B3091002E16A5 /* LocalNotificationApp.swift */,
 				44E40279265B3091002E16A5 /* ContentView.swift */,
+				44E402A8265B3804002E16A5 /* NotificationController.swift */,
+				44E402AA265B3840002E16A5 /* PushSettingView.swift */,
 				44E4027B265B3093002E16A5 /* Assets.xcassets */,
 				44E40280265B3093002E16A5 /* Info.plist */,
 				44E4027D265B3093002E16A5 /* Preview Content */,
@@ -128,6 +139,15 @@
 				44E40296265B3093002E16A5 /* Info.plist */,
 			);
 			path = LocalNotificationUITests;
+			sourceTree = "<group>";
+		};
+		44E402A3265B3774002E16A5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44E402A4265B37AF002E16A5 /* Calendar+extension.swift */,
+				44E402A6265B37D3002E16A5 /* Date+extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E402A9265B3804002E16A5 /* NotificationController.swift in Sources */,
 				44E4027A265B3091002E16A5 /* ContentView.swift in Sources */,
+				44E402A7265B37D3002E16A5 /* Date+extension.swift in Sources */,
+				44E402AB265B3840002E16A5 /* PushSettingView.swift in Sources */,
+				44E402A5265B37AF002E16A5 /* Calendar+extension.swift in Sources */,
 				44E40278265B3091002E16A5 /* LocalNotificationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
